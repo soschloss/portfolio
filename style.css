@@ -1,5 +1,5 @@
 :root {
-  --color-accent: oklch(0.5233 0.2528 324);
+  --color-accent: oklch(0.5559 0.2343 145.06);
   accent-color: var(--color-accent);
 }
 body {
@@ -7,12 +7,19 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
-  max-width: 70em;
-  margin-inline: max(1.5em, (100% - 100ch) / 2);
+  max-width: 80ch;
+  margin-inline: max(1.5em, (100% - 80ch) / 2);
 }
-img {
-  max-width: 40%;
+img.home-pic {
+  max-width: 50%;
   height: auto;
+}
+h1 {
+  font-size: 350%;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
 }
 /* Nav styling */
 nav {
@@ -53,5 +60,83 @@ form {
   }
   button {
     grid-column: 1 / -1;
+  }
+}
+/* Projects page styling */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 0.7em clamp(0.5em, 2vw, 1em);
+}
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+.projects h2 {
+  margin: 0;
+}
+.projects p {
+  margin-top: 0;
+}
+/* Resume page styling */
+/* section h2 {
+  margin-bottom: 0;
+} */
+/* section ul{
+  margin-top: 0.3em;
+} */
+section p:has(+ ul) {
+  margin-bottom: 0;
+}
+
+ /* Resume styling */
+.resume {
+  display: grid;
+  grid-template-columns: 15ch 1fr;
+  gap: 0.5em 2em;
+  padding-block: 1em;
+  border-top: 1px solid oklch(80% 3% 200);
+
+  h2 {
+    color: var(--color-accent);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+    align-self: start;
+  }
+
+  ul {
+    margin-block: 0.25em 0.5em;
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin-block: 0.25em;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.resume.first {
+  border-top: none;
+  display: block;
+
+  h2 {
+    color: var(--color-accent);
+    font-size: 2em;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 0.25em;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+    font-size: 0.9em;
+    margin-top: 0;
   }
 }
