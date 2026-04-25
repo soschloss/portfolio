@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
+h2.subtitle {
+  font-size: 210%;
+}
 /* Nav styling */
 nav {
   --border-color: oklch(50% 10% 200 / 40%);
@@ -80,6 +83,11 @@ form {
 }
 .projects p {
   margin-top: 0;
+}
+.projects img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 /* Resume page styling */
 /* section h2 {
@@ -149,4 +157,21 @@ label.color-scheme {
   right: 1rem;
   font-size: 80%;
   font-family: inherit;
+}
+
+/* Github stats styling */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-size: 1.2em;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.5em;
 }
