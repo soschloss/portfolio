@@ -4,15 +4,6 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// Auto current page link
-// let navLinks = $$('nav a');
-// let currentLink = navLinks.find(
-//   (a) => a.host === location.host && a.pathname === location.pathname,
-// );
-// if (currentLink) {
-//   currentLink.classList.add('current');
-// }
-
 // Auto navigation menu
 let pages = [
   { url: '', title: 'Home' },
@@ -72,3 +63,43 @@ select.addEventListener('input', function (event) {
   setColorScheme(event.target.value);
 });
 
+// import projects data
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    // console.log(response);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+// Render projects
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  // Validate heading level
+  const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+  if (!validHeadings.includes(headingLevel)) {
+    headingLevel = 'h2';
+  }
+  // Clear existing content
+  containerElement.innerHTML = '';
+  // Create and append project elements 
+  for (const project of projects) {
+    const article = document.createElement('article');
+    const title = project.title ?? 'Untitled Project';
+    const image = project.image ?? 'https://vis-society.github.io/labs/2/images/empty.svg';
+    const alt = project.title ?? 'No image available';
+    const description = project.description ?? 'No description available';
+
+    article.innerHTML = `
+      <${headingLevel}>${title}</${headingLevel}>
+      <img src="${image}" alt="${alt}">
+      <p>${description}</p>
+    `;
+    containerElement.appendChild(article);
+  }
+}
