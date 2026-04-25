@@ -2,31 +2,31 @@
     {
         "title": "The Healthier Unhealthy Choice: Whole Foods vs. Target Sweets",
         "year": 2026,
-        "image": "../images/targetvsWF.png",
+        "image": "/images/targetvsWF.png",
         "description": "An expository visualization comparing the processing levels and sugar content of sweets at Whole Foods and Target, using FPro scores and nutritional data from over 50,000 grocery store products. Designed for DSC 106 at UCSD."
     },
     {
         "title": "Investigating U.S. Power Outages",
         "year": 2025,
-        "image": "../images/outages.png",
+        "image": "/images/outages.png",
         "description": "An investigation into U.S. power outage data from 2000–2016, analyzing the characteristics associated with each cause category. Includes exploratory data analysis, missingness assessment, and a multiclass classification model to predict outage causes using climate, location, and consumption data."
     },
     {
         "title": "Language Models from Scratch: N-Gram Text Generation",
         "year": 2025,
-        "image": "../images/homer_wordcloud.png",
+        "image": "/images/homer_wordcloud.png",
         "description": "An implementation of three language models — uniform, unigram, and N-gram — trained on public domain books from Project Gutenberg, used to assign probabilities to word sequences and generate random text samples using learned token distributions"
     },
     {
         "title": "Lending Club Loan Analysis: Borrower Characteristics and Interest Rates",
         "year": 2025,
-        "image": "../images/boxplot.png",
+        "image": "/images/boxplot.png",
         "description": "An analysis of LendingClub loan data exploring relationships between borrower characteristics — including credit score, income, employment, and debt-to-income ratio — and loan outcomes, including a permutation test for missingness and a Simpson's Paradox investigation on interest rates."
     },
     {
         "title": "Gradebook Analysis and Grade Processing Pipeline",
         "year": 2025,
-        "image": "../images/grade_heatmap.png",
+        "image": "/images/grade_heatmap.png",
         "description": "A data processing pipeline built in DSC 80 at UCSD to compute course grades for a fictional 535-student class, implementing lateness penalties, grade weighting, midterm redemption via z-score normalization, and section-level performance analysis."
     },
     {
@@ -38,7 +38,7 @@
     {
         "title": "Image & Audio Processing Pipeline with KNN Classifier",
         "year": 2024,
-        "image": "../images/edge_detection.png",
+        "image": "/images/edge_detection.png",
         "description": "An object-oriented image and audio processing library built in DSC 20 at UCSD, implementing RGB pixel manipulation, filters (negate, grayscale, blur, edge highlight), audio transformations (reverb, speed, reverse), and a K-nearest neighbors image classifier using pixel-space distances."
     },
     {
