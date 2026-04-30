@@ -1,5 +1,11 @@
 [
     {
+        "title": "Two Sides of the Same Data: NYPD Complaint Records",
+        "year": 2026,
+        "image": "NYPD_plots.png",
+        "description": "An exploration of NYPD civilian complaint data, examining how the same dataset can be used to argue opposing conclusions. Includes exploratory data analysis and two deliberately persuasive visualizations, one framing misconduct as a systemic institutional issue and the other as the behavior of a small minority, with an ethical reflection on the boundary between persuasion and deception in data visualization. Completed as a 3 person team."
+    },
+    {
         "title": "The Healthier Unhealthy Choice: Whole Foods vs. Target Sweets",
         "year": 2026,
         "image": "targetvsWF.png",
@@ -42,22 +48,22 @@
     },
     {
         "title": "Reiciendis natus quisquam nisi.",
+        "year": 2024,
         "description": "Sint laboriosam consequatur blanditiis ex, magni perspiciatis autem nisi quam adipisci quis doloribus, neque quia velit voluptate est rem nobis? Atque veritatis possimus esse totam doloribus hic fuga itaque blanditiis."
     },
     {
         "title": "Velit autem sed architecto!",
+        "year": 2024,
         "description": "Atque libero aspernatur quod, nisi dolorem mollitia quia optio laudantium. Perferendis, odio et. Laboriosam officiis perferendis delectus aperiam mollitia totam quia corporis nulla rem! Beatae consequatur sunt dolores itaque cumque?"
     },
     {
         "title": "Voluptates nostrum debitis officiis?",
+        "year": 2024,
         "description": "Voluptas, mollitia impedit. Harum laudantium quasi architecto repellat dolorem accusantium beatae sunt quia, unde adipisci, omnis cum est sapiente nesciunt blanditiis explicabo magni temporibus iusto veniam dignissimos facere earum quidem!"
     },
     {
         "title": "Rem voluptatibus minima sapiente?",
+        "year": 2024,
         "description": "Minima, mollitia facilis impedit ratione beatae repellat rem nostrum sed quibusdam odit deleniti consequuntur itaque, eveniet repellendus, at corporis doloribus voluptatibus eius tempora blanditiis labore possimus quaerat exercitationem voluptas. Placeat!"
-    },
-    {
-        "title": "Praesentium laborum doloribus dicta!",
-        "description": "Veniam quasi tempora distinctio! Autem, maiores! Officiis quia modi blanditiis? Numquam autem, at expedita eum accusamus deleniti quisquam sunt excepturi voluptatem eveniet ab. Vel voluptatibus illum sapiente officia suscipit cupiditate."
     }
 ]

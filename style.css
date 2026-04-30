@@ -83,11 +83,57 @@ form {
 }
 .projects p {
   margin-top: 0;
+  margin-bottom: 0.2em;
+}
+.projects p.project-year {
+  font-family: ui-monospace, Menlo;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
 }
 .projects img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  padding: 1em;
+  margin-block: 2em;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 0.5em;
+  list-style: none;
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.2em;
+  flex-shrink: 0;
+  vertical-align: text-bottom;
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 /* Resume page styling */
 /* section h2 {
