@@ -135,13 +135,29 @@ form {
   align-items: center;
   gap: 2em;
 }
+/* Pie chart styling */
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+.selected {
+  --color: oklch(58.587% 0.19936 1.873) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+.searchBar {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
 /* Resume page styling */
-/* section h2 {
-  margin-bottom: 0;
-} */
-/* section ul{
-  margin-top: 0.3em;
-} */
 section p:has(+ ul) {
   margin-bottom: 0;
 }
