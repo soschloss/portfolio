@@ -3,48 +3,48 @@
         "title": "Two Sides of the Same Data: NYPD Complaint Records",
         "year": 2026,
         "image": "NYPD_plots.png",
-        "description": "An exploration of NYPD civilian complaint data, examining how the same dataset can be used to argue opposing conclusions. Includes exploratory data analysis and two deliberately persuasive visualizations, one framing misconduct as a systemic institutional issue and the other as the behavior of a small minority, with an ethical reflection on the boundary between persuasion and deception in data visualization. Completed as a 3 person team."
+        "description": "This project explores NYPD civilian complaint data, demonstrating how a single dataset can support opposing conclusions. It includes exploratory data analysis and two persuasive visualizations: one presenting misconduct as a systemic institutional issue, and the other attributing it to a small minority. The project concludes with an ethical reflection on the distinction between persuasion and deception in data visualization. Conducted as a three-person team."
     },
     {
         "title": "The Healthier Unhealthy Choice: Whole Foods vs. Target Sweets",
         "year": 2026,
         "image": "targetvsWF.png",
-        "description": "An expository visualization comparing the processing levels and sugar content of sweets at Whole Foods and Target, using FPro scores and nutritional data from over 50,000 grocery store products. Designed for DSC 106 at UCSD."
+        "description": "This expository visualization compares the processing levels and sugar content of sweets from Whole Foods and Target, using FPro scores and nutritional data from over 50,000 grocery store products. Developed for DSC 106 at UCSD."
     },
     {
         "title": "Investigating U.S. Power Outages",
         "year": 2025,
         "image": "outages.png",
-        "description": "An investigation into U.S. power outage data from 2000–2016, analyzing the characteristics associated with each cause category. Includes exploratory data analysis, missingness assessment, and a multiclass classification model to predict outage causes using climate, location, and consumption data."
+        "description": "This project investigates U.S. power outage data from 2000 to 2016, analyzing characteristics associated with each cause category. It includes exploratory data analysis, assessment of missing data, and development of a multiclass classification model to predict outage causes using climate, location, and consumption data."
     },
     {
         "title": "Language Models from Scratch: N-Gram Text Generation",
         "year": 2025,
         "image": "homer_wordcloud.png",
-        "description": "An implementation of three language models — uniform, unigram, and N-gram — trained on public domain books from Project Gutenberg, used to assign probabilities to word sequences and generate random text samples using learned token distributions"
+        "description": "This project implements three language models: uniform, unigram, and N-gram. These models are trained on public domain books from Project Gutenberg to assign probabilities to word sequences and generate random text samples using learned token distributions."
     },
     {
         "title": "Lending Club Loan Analysis: Borrower Characteristics and Interest Rates",
         "year": 2025,
         "image": "boxplot.png",
-        "description": "An analysis of LendingClub loan data exploring relationships between borrower characteristics — including credit score, income, employment, and debt-to-income ratio — and loan outcomes, including a permutation test for missingness and a Simpson's Paradox investigation on interest rates."
+        "description": "This analysis examines LendingClub loan data to explore relationships between borrower characteristics, such as credit score, income, employment, and debt-to-income ratio, and loan outcomes. The project includes a permutation test for missing data and an investigation of Simpson's Paradox in interest rates."
     },
     {
         "title": "Gradebook Analysis and Grade Processing Pipeline",
         "year": 2025,
         "image": "grade_heatmap.png",
-        "description": "A data processing pipeline built in DSC 80 at UCSD to compute course grades for a fictional 535-student class, implementing lateness penalties, grade weighting, midterm redemption via z-score normalization, and section-level performance analysis."
+        "description": "This data processing pipeline, developed in DSC 80 at UCSD, computes course grades for a fictional class of 535 students. It implements lateness penalties, grade weighting, midterm redemption through z-score normalization, and section-level performance analysis."
     },
     {
         "title": "ESP32 Habit Tracker",
         "year": 2025,
-        "description": "A physical habit tracker built with MicroPython on an Adafruit ESP32-S2 Reverse TFT Feather, using the built-in TFT display and buttons to log and visualize daily habits. Features a custom 3D-printed enclosure currently in progress."
+        "description": "This physical habit tracker is built with MicroPython on an Adafruit ESP32-S2 Reverse TFT Feather, utilizing the integrated TFT display and buttons to log and visualize daily habits. The project features a custom 3D-printed enclosure currently under development."
     },
     {
         "title": "Image & Audio Processing Pipeline with KNN Classifier",
         "year": 2024,
         "image": "edge_detection.png",
-        "description": "An object-oriented image and audio processing library built in DSC 20 at UCSD, implementing RGB pixel manipulation, filters (negate, grayscale, blur, edge highlight), audio transformations (reverb, speed, reverse), and a K-nearest neighbors image classifier using pixel-space distances."
+        "description": "This object-oriented image and audio processing library, developed in DSC 20 at UCSD, implements RGB pixel manipulation, image filters (negate, grayscale, blur, edge highlight), audio transformations (reverb, speed, reverse), and a K-nearest neighbors image classifier based on pixel-space distances."
     },
     {
         "title": "Reiciendis natus quisquam nisi.",
