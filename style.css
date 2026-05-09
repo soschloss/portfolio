@@ -222,18 +222,65 @@ label.color-scheme {
 }
 
 /* Github stats styling */
-#profile-stats dl {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+ #profile-stats dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 4rem;
+  background: var(--color-bg-secondary, #f5f5f5);
+  border-radius: 8px;
+  padding: 1.2rem 1.6rem;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+#profile-stats dl div {
+  display: flex;
+  flex-direction: column;
 }
 
 #profile-stats dt {
-  grid-row: 1;
-  font-size: 1.2em;
+  color: var(--color-text-muted, #888);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 #profile-stats dd {
-  grid-row: 2;
   margin: 0;
-  font-size: 1.5em;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--color-accent);
+}
+
+/* Summary stats styling */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 4rem;
+  background: var(--color-bg-secondary, #f5f5f5);
+  border-radius: 8px;
+  padding: 1.2rem 1.6rem;
+  width: fit-content;
+  margin-inline: auto; /* add this */
+}
+
+.stats dt {
+  color: var(--color-text-muted, #888);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stats dd {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--color-accent, #b48ead);
+}
+
+.stat-sub {
+  font-weight: 400;
+  color: var(--color-text-muted, #888);
+  font-size: 0.85em;
+  margin-left: 0.3em;
 }
