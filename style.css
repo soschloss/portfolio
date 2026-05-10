@@ -1,5 +1,6 @@
 :root {
   --color-accent: oklch(0.5559 0.2343 145.06);
+  --max-width: 82ch;
   accent-color: var(--color-accent);
   color-scheme: light dark;
 }
@@ -8,8 +9,8 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
-  max-width: 80ch;
-  margin-inline: max(1.5em, (100% - 80ch) / 2);
+  max-width: var(--max-width);
+  margin-inline: max(1.5em, (100% - var(--max-width)) / 2);
 }
 img.home-pic {
   max-width: 50%;
@@ -161,8 +162,6 @@ path {
 section p:has(+ ul) {
   margin-bottom: 0;
 }
-
- /* Resume styling */
 .resume {
   display: grid;
   grid-template-columns: 15ch 1fr;
@@ -192,7 +191,6 @@ section p:has(+ ul) {
     margin-top: 0;
   }
 }
-
 .resume.first {
   border-top: none;
   display: block;
@@ -221,66 +219,102 @@ label.color-scheme {
   font-family: inherit;
 }
 
-/* Github stats styling */
- #profile-stats dl {
+/* Github and summary stats styling */
+ /* #profile-stats dl, .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 8rem);
+  gap: 1.5rem 4rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--color-bg-secondary, #f5f5f5);
+  border-radius: 8px;
+  justify-items: center;
+  justify-content: center;
+  
+} */
+#profile-stats dl, .stats {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem 4rem;
+  padding: 1.2rem 1.6rem;
   background: var(--color-bg-secondary, #f5f5f5);
   border-radius: 8px;
-  padding: 1.2rem 1.6rem;
-  width: fit-content;
-  margin-inline: auto;
 }
-
 #profile-stats dl div {
   display: flex;
   flex-direction: column;
 }
 
-#profile-stats dt {
+#profile-stats dt, .stats dt {
   color: var(--color-text-muted, #888);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  /* white-space: nowrap; */
 }
 
-#profile-stats dd {
+#profile-stats dd, .stats dd {
   margin: 0;
   font-weight: 600;
   font-size: 1.4rem;
   color: var(--color-accent);
 }
+/* .stats div:first-child {
+  min-width: 0;
+  width: 7.9rem;
+} */
 
-/* Summary stats styling */
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem 4rem;
-  background: var(--color-bg-secondary, #f5f5f5);
-  border-radius: 8px;
-  padding: 1.2rem 1.6rem;
-  width: fit-content;
-  margin-inline: auto; /* add this */
+/* Commit scatter plot styling */
+.gridlines line {
+  stroke: #ccc;
+  stroke-opacity: 0.5;
 }
+.gridlines .domain { display: none; }
 
-.stats dt {
-  color: var(--color-text-muted, #888);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.stats dd {
+/* Tooltips */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
   margin: 0;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: var(--color-accent, #b48ead);
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 0.75em 1em;
+  backdrop-filter: blur(4px);
+}
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-.stat-sub {
-  font-weight: 400;
-  color: var(--color-text-muted, #888);
-  font-size: 0.85em;
-  margin-left: 0.3em;
+circle:hover {
+  transform: scale(1.5);
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+circle.selected {
+  fill: #ff6b6b;
 }
