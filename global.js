@@ -92,14 +92,17 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   for (const project of projects) {
     const article = document.createElement('article');
     const title = project.title ?? 'Untitled Project';
-    const image = project.image 
-      ? `${BASE_PATH}images/${project.image}` 
+    const titleHTML = project.url
+      ? `<a href="${project.url}" target="_blank">${title}</a>`
+      : title;
+    const image = project.image
+      ? `${BASE_PATH}images/${project.image}`
       : 'https://vis-society.github.io/labs/2/images/empty.svg';
     const alt = project.title ?? 'No image available';
     const description = project.description ?? 'No description available';
 
     article.innerHTML = `
-      <${headingLevel}>${title}</${headingLevel}>
+      <${headingLevel}>${titleHTML}</${headingLevel}>
       <img src="${image}" alt="${alt}">
       <div>
         <p>${description}</p>

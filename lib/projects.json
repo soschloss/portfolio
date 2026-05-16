@@ -1,6 +1,21 @@
 [
     {
+        "title": "Boston Bikes: Interactive Bike Traffic Map",
+        "url": "https://soschloss.github.io/boston-bike-map/",
+        "year": 2026,
+        "image": "bike-map.png",
+        "description": "An interactive geospatial visualization of BlueBike station traffic in the Boston and Cambridge area, built with Mapbox and D3.js. Displays bike lane networks, station traffic volume, and arrival/departure flow patterns across 260,000+ rides from March 2024, with time-of-day filtering. Built for DSC 106 at UCSD."
+    },
+    {
+        "title": "Climate Scenarios: Projected U.S. Temperature Trends",
+        "url": "https://abbymcleod.github.io/dsc106-proj-3/",
+        "year": 2026,
+        "image": "warming-map.png",
+        "description": "This interactive visualization examines projected winter warming across U.S. cities under various emissions scenarios, developed with D3.js. Users can select individual cities to view long-term temperature trends and compare future outcomes across climate scenarios. Built as a three-person project for DSC 106 at UCSD."
+    },
+    {
         "title": "Two Sides of the Same Data: NYPD Complaint Records",
+        "url": "https://soschloss.github.io/dsc-106-proj-2/",
         "year": 2026,
         "image": "NYPD_plots.png",
         "description": "This project explores NYPD civilian complaint data, demonstrating how a single dataset can support opposing conclusions. It includes exploratory data analysis and two persuasive visualizations: one presenting misconduct as a systemic institutional issue, and the other attributing it to a small minority. The project concludes with an ethical reflection on the distinction between persuasion and deception in data visualization. Conducted as a three-person team."
@@ -13,6 +28,7 @@
     },
     {
         "title": "Investigating U.S. Power Outages",
+        "url": "https://soschloss.github.io/outage-data-investigation/",
         "year": 2025,
         "image": "outages.png",
         "description": "This project investigates U.S. power outage data from 2000 to 2016, analyzing characteristics associated with each cause category. It includes exploratory data analysis, assessment of missing data, and development of a multiclass classification model to predict outage causes using climate, location, and consumption data."
@@ -45,16 +61,6 @@
         "year": 2024,
         "image": "edge_detection.png",
         "description": "This object-oriented image and audio processing library, developed in DSC 20 at UCSD, implements RGB pixel manipulation, image filters (negate, grayscale, blur, edge highlight), audio transformations (reverb, speed, reverse), and a K-nearest neighbors image classifier based on pixel-space distances."
-    },
-    {
-        "title": "Reiciendis natus quisquam nisi.",
-        "year": 2024,
-        "description": "Sint laboriosam consequatur blanditiis ex, magni perspiciatis autem nisi quam adipisci quis doloribus, neque quia velit voluptate est rem nobis? Atque veritatis possimus esse totam doloribus hic fuga itaque blanditiis."
-    },
-    {
-        "title": "Velit autem sed architecto!",
-        "year": 2024,
-        "description": "Atque libero aspernatur quod, nisi dolorem mollitia quia optio laudantium. Perferendis, odio et. Laboriosam officiis perferendis delectus aperiam mollitia totam quia corporis nulla rem! Beatae consequatur sunt dolores itaque cumque?"
     },
     {
         "title": "Voluptates nostrum debitis officiis?",
