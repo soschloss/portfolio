@@ -1,4 +1,4 @@
-console.log('IT’S ALIVE!');
+// console.log('IT’S ALIVE!');
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
@@ -62,6 +62,20 @@ if ('colorScheme' in localStorage) {
 select.addEventListener('input', function (event) {
   localStorage.colorScheme = event.target.value;
   setColorScheme(event.target.value);
+});
+
+// Contact form submission
+let form = document.querySelector('form');
+
+form?.addEventListener('submit', function (event) {
+  event.preventDefault();
+  let data = new FormData(form);
+  let params = [];
+  for (let [name, value] of data) {
+    params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+  }
+  let url = `${form.action}?${params.join('&')}`;
+  location.href = url;
 });
 
 // import projects data
