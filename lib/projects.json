@@ -1,5 +1,12 @@
 [
     {
+        "title": "Choose Your Future: How Today's Emissions Decide Tomorrow's Climate",
+        "url": "https://abbymcleod.github.io/dsc106-final/",
+        "year": 2026,
+        "image": "ssp-plot.png",
+        "description": "A scrollytelling explorable explanation developed with D3.js that lets users choose an emissions scenario (SSP1-2.6 through SSP5-8.5) and see how that choice reshapes global temperature and coastal sea levels through 2100. Combines a global temperature anomaly interactive, a choose-your-own-adventure decision sequence, and a city-by-city sea-level risk map for U.S. coastal cities, with optional toggles for ice melt and land subsidence. Built on CMIP6 climate model data as a three-person project for DSC 106 at UCSD."
+    },
+    {
         "title": "Boston Bikes: Interactive Bike Traffic Map",
         "url": "https://soschloss.github.io/boston-bike-map/",
         "year": 2026,
@@ -61,11 +68,6 @@
         "year": 2024,
         "image": "edge_detection.png",
         "description": "This object-oriented image and audio processing library, developed in DSC 20 at UCSD, implements RGB pixel manipulation, image filters (negate, grayscale, blur, edge highlight), audio transformations (reverb, speed, reverse), and a K-nearest neighbors image classifier based on pixel-space distances."
-    },
-    {
-        "title": "Voluptates nostrum debitis officiis?",
-        "year": 2023,
-        "description": "Voluptas, mollitia impedit. Harum laudantium quasi architecto repellat dolorem accusantium beatae sunt quia, unde adipisci, omnis cum est sapiente nesciunt blanditiis explicabo magni temporibus iusto veniam dignissimos facere earum quidem!"
     },
     {
         "title": "Rem voluptatibus minima sapiente?",
